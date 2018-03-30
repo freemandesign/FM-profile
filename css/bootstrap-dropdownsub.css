@@ -1,0 +1,98 @@
+.dropdown-sub>.dropdown-menu {
+	-webkit-transition: height .2s, width .2s;
+			transition: height .2s, width .2s;
+}
+.dropdown-sub-nohover>.dropdown-menu {
+	overflow: hidden;
+}
+.dropdown-sub>.dropdown-menu>.dropdown-menu,
+.dropdown-sub-nohover .dropdown-sub-item>.dropdown-menu {
+	left: 0;
+	right: auto;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+	min-width: 100%;
+}
+.dropdown-sub>.dropdown-menu .dropdown-menu {
+	top: 0;
+	margin: 0;
+}
+.dropdown-sub>.dropdown-menu>.dropdown-menu {
+	display: block;
+	position: relative;
+	-webkit-transition: left .2s;
+			transition: left .2s;
+}
+.dropdown-sub .dropdown-sub-item>.dropdown-menu {
+	left: 100%;
+}
+.dropdown-sub-item>a::after {
+	content: '';
+	float: right;
+	margin-top: 5px;
+	margin-right: -10px;
+	border-left: 5px dashed;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+.dropdown-sub-back>a {
+	font-size: .9em;
+	font-style: italic;
+}
+.dropdown-sub-back>a::before {
+	content: '';
+	float: left;
+	margin-top: 4px;
+	margin-left: -10px;
+	border-right: 4px dashed;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+.dropdown-sub li>a {
+	overflow: hidden;
+}
+
+@media (max-width:767px) {
+	.dropdown-sub>.dropdown-menu {
+		overflow: hidden;
+	}
+	.dropdown-sub-item>.dropdown-menu {
+		right: auto;
+		padding: 0;
+		border: none;
+		box-shadow: none;
+		min-width: 100%;
+	}
+	.dropdown-sub-item.open>.dropdown-menu {
+		width: 100%;
+	}
+}
+
+@media (min-width:768px) {
+	.dropdown-sub:not(.dropdown-sub-nohover)>.dropdown-menu {
+		height: auto !important;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover)>.dropdown-menu>.dropdown-menu {
+		left: 0 !important;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover)>.dropdown-menu>.dropdown-menu .dropdown-menu {
+		display: none;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover) .dropdown-sub-item {
+		position: relative;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover) .dropdown-sub-item:hover>.dropdown-menu {
+		display: block;
+		margin-top: -6px;
+		margin-left: -1px;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover) .dropdown-sub-item:hover>a {
+		color: #262626;
+		text-decoration: none;
+		background-color: #f5f5f5;
+	}
+	.dropdown-sub:not(.dropdown-sub-nohover) .dropdown-sub-back {
+		display: none;
+	}
+}

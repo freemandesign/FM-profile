@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Freeman | Profile: jo joey</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fn.sortable.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-timepicker.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/bootstrap-tagsinput.min.js"></script>
+<script src="js/bootstrap3-typeahead.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/bootstrap-wysiwyg.min.js"></script>
+<script src="js/jquery.hotkeys.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/jquery.serializejson.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="js/dataTables.bootstrap.js"></script>
+<script src="js/bootstrap-dropdownsub.js"></script>
+<script src="js/numeric-inputs.js"></script>
+<script src="js/fm.js?1031"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="css/bootbox.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-dropdownsub.css">
+<link rel="stylesheet" href="css/fm.css?1031">
+<link rel="stylesheet" href="css/print.css" media="print">		<script src="js/fm-user.js?1031"></script>
+		<link rel="stylesheet" href="css/user.css?1031">
+	</head>
+	<body class="">
+		<div class="profile-top">
+			<div class="container">
+
+				<div class="container-with-sponsors">
+					<div class="pull-right action-buttons-top">
+													<span class="edit-controls hidden">
+								<button class="btn btn-success edit-show" data-loading-text="<i class='fa fa-spinner fa-pulse'></i> <span class='hidden-xs'>Saving</span>" id="saveButton">
+									<i class="fa fa-save"></i> Save
+								</button>
+							</span>
+							<span id="custom-buttons"></span>							<div class="dropdown" style="display:inline-block">
+								<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+									<span class="hidden-xs"><b>Register/Book</b> <span class="caret"></span></span>
+									<i class="visible-xs-inline fa fa-bars"></i>
+								</button>
+								<ul class="dropdown-menu pull-right">
+									<li><a href='/register?p%5B0%5D=13'><i class="fa fa-fw fa-calendar"></i> Re-register</a></li><li><a href='/venues/book?staff=0'><i class="fa fa-fw fa-building-o"></i> Book a Venue</a></li>									<li class="visible-xs-block"><a href="/logout"><i class="fa fa-fw fa-sign-out"></i> Logout</a></li>
+								</ul>
+							</div>
+												</div>
+					<div class="profile-greeting">
+						<span class='hidden-xs'>This is your club</span>					</div>
+				</div>
+			</div>
+		</div>
+		<img id="profile-bg" src="images/system/bg/dirt.jpg">
+		<div class="container hidden-xs profile-head">
+			<div class="profile-club-dets hidden-xs pull-right">
+				<a class="btn btn-sm btn-warning" id="profile-logout" href="/logout"><i class="fa fa-sign-out"></i> <span class="hidden-xs">Logout</span></a><br>
+				Freeman<br>0273313206<br>mjf3392@gmail.com			</div>
+			<a class="logo-container" href="/"><img src="https://iwantthejob.friendlymanager.com/images/iwantthejob/logo/339x240.png"></a>
+		</div>
+
+		<div class="profile-top">
+			<div class="container">
+
+				<div class="container-with-sponsors">
+					<div class="pull-right action-buttons-top">
+													<span class="edit-controls hidden">
+								<button class="btn btn-info edit-hide" id="editButton">
+									<i class="fa fa-pencil"></i> Edit
+								</button>
+								<button class="btn btn-success edit-show" data-loading-text="<i class='fa fa-spinner fa-pulse'></i> <span class='hidden-xs'>Saving</span>" id="saveButton">
+									<i class="fa fa-save"></i> Save
+								</button>
+							</span>
+							<span id="custom-buttons"></span>							<div class="dropdown" style="display:inline-block">
+								<ul class="dropdown-menu pull-right">
+									<li><a href='/register?p%5B0%5D=13'><i class="fa fa-fw fa-calendar"></i> Re-register</a></li><li><a href='/venues/book?staff=0'><i class="fa fa-fw fa-building-o"></i> Book a Venue</a></li>									<li class="visible-xs-block"><a href="/logout"><i class="fa fa-fw fa-sign-out"></i> Logout</a></li>
+								</ul>
+							</div>
+												</div>
+					<div class="profile-greeting">
+						<span class='hidden-xs'>Hi jo</span>					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="profile-tabs">
+	<div class="container">
+		<div class="container-with-sponsors">
+						<label class="btn profile-image disabled no-image hidden-xs">
+				<input type="file" class="hidden edit-input" accept="image/jpeg,image/png" id="profileImage">			</label>
+			<ul class="nav nav-tabs nav-hash">
+	<li><a href="#profile" data-toggle="tab"><i class="fa fa-user"></i> <span class="hidden-xs">Profile</span></a></li>
+		<li><a href="#fees" data-toggle="tab" id="feesTab"><i class="fa fa-usd"></i> <span class="hidden-xs">Fees</span></a></li>
+		<li><a href="#events" data-toggle="tab" id="eventsTab"><i class="fa fa-calendar"></i> <span class="hidden-xs">Events</span></a></li>
+		<li><a href="#attendance" data-toggle="tab" id="attendanceTab"><i class="fa fa-check-square-o"></i> <span class="hidden-xs">Attendance</span></a></li>
+			<li><a href="#membership" data-toggle="tab" class=""><i class="fa fa-line-chart"></i> <span class="hidden-xs">Membership</span></a></li>
+	</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container profile-content">
+	<div class="container-with-sponsors">
+		<div class="tab-content">
+	<div class="tab-pane " id="profile">
+		<form id="profileForm" class="edit-page" data-id="13" data-name="jo joey" data-manage="">
+	<div class="row">
+		<div class="col-md-6">
+			<table class="table profile-table profile1 no-top-border">
+									<tr>
+						<th><div class="edit-static">Name</div></th>
+						<td>
+							<div class="row no-cols-xs">
+								<div class="col-xs-6 form-group"><input disabled class="form-control edit-input" id="firstName" name="person[firstName]" placeholder="First Name" value="jo" required></div>
+								<div class="col-xs-6 form-group"><input disabled class="form-control edit-input" id="lastName" name="person[lastName]" placeholder="Last Name" value="joey" required></div>
+							</div>
+						</td>
+					</tr>
+
+				<tr>
+					<th width="30%" class="profile-contact"><div class="edit-static">Email</div></th>
+					<td class="form-group">
+													<div class="" data-id="13">
+								<input type="email" disabled class="form-control edit-input" placeholder="Email Address" name="person[email]" value="matthewjosephfreeman@gmail.com" required>
+															</div>
+												</td>
+				</tr>
+				<tr>
+					<th><div class="edit-static"><span class="hidden-xs">Primary</span> Phone</div></th>
+					<td class="form-group">
+						<div class="tel">
+							<input type="text" disabled class="form-control edit-input" placeholder="Primary Number" name="person[phone]" href="tel:(66) 664 44336" value="(66) 664 44336">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th><div class="edit-static">Alternate <span class="hidden-xs">Phone</span></div></th>
+					<td class="form-group">
+						<div class="tel">
+							<input type="text" disabled class="form-control edit-input" placeholder="Alternate Number" name="person[alternatePhone]" href="tel:" value="">
+						</div>
+					</td>
+				</tr>
+
+								<tr>
+					<th><div class="edit-static">Gender</div></th>
+					<td>
+						<div class="form-group">
+							<select disabled class="form-control edit-input" name="person[gender]">
+								<option selected disabled></option>								<option >Male</option>
+								<option >Female</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+
+								<tr>
+					<th><div class="edit-static">Date Of Birth</div></th>
+					<td>
+						<div class="row no-cols-xs">
+							<div class="col-xs-12 col-sm-5 form-group">
+								<input disabled class="form-control edit-input pick-date" value="" data-date-start-view="3" data-date-default-view-date='{"year":1980}' placeholder="dd/mm/yyyy">
+								<input disabled type="date" class="form-control edit-input date-value date-to-now" id="dob" name="person[dateOfBirth]" value="0000-00-00" data-cutoff="">
+							</div>
+							<div class="col-sm-7 form-inline hidden-xs">
+								<label class="control-label edit-static" style="display:none">Age: <span id="dob-years"></span></label>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+									<tr>
+						<th><div class="edit-static">Join Date</div></th>
+						<td>
+							<div class="row no-cols-xs">
+								<div class="col-xs-12 col-sm-5 form-group">
+																			<div class="edit-static">12/02/2018</div>
+										<input type="hidden" class="date-to-now" id="joined" value="2018-02-12">
+																		</div>
+								<div class="col-sm-7 form-inline hidden-xs">
+									<label class="control-label edit-static" style="display:none">Member For: <span id="joined-years"></span></label>
+								</div>
+							</div>
+						</td>
+					</tr>
+										<tr>
+						<th><div class="edit-static">Player Groups</div></th>
+						<td>
+															<div class="row edit-static" id="player-1">
+									<div class="col-xs-7">C: Top class</div>
+									<div class="col-xs-5">2018-08-15</div>
+								</div>
+														</td>
+					</tr>
+								</table>
+		</div>
+
+		<div class="col-md-6">
+			<table class="table profile-table profile2 no-top-border">
+				<tr>
+					<th width="30%"><div class="edit-static">Address</div></th>
+					<td>
+						<div>
+							<input disabled class="form-control edit-input" placeholder="Street" name="person[street]" value="">
+							<input disabled class="form-control edit-input" placeholder="Suburb" name="person[suburb]" value="">
+						</div>
+						<div class="row">
+							<div class="col-sm-6"><input disabled class="form-control edit-input" placeholder="City" name="person[city]" value=""></div>
+							<div class="col-sm-6"><input disabled class="form-control edit-input" placeholder="Post Code" name="person[postCode]" value=""></div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th><div class="edit-static">Medical</div></th>
+					<td>
+						<textarea disabled class="form-control edit-input" placeholder="Medical notes, allergies etc" name="person[medical]"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<th><div class="edit-static">Privacy</div></th>
+					<td>
+						<div class="checkbox edit-checkbox">
+							<label>
+								<input type="hidden" name="person[allowPhotos]" value="0">
+								<input type="checkbox" class="edit-input" disabled name="person[allowPhotos]" value="1" data-unchecked-value="0" checked><i class="fa"></i>
+								<span class="show-checked">Allow</span><span class="show-unchecked">Do not allow</span> <span class="hidden-xs">photos to be taken</span>
+							</label>
+						</div>
+					</td>
+				</tr>
+
+
+									<tr>
+						<th><div class="edit-static">Newsletter</div></th>
+						<td>
+							<div class="checkbox edit-checkbox">
+								<label>
+									<input type="hidden" name="person[subscribed]" value="0">
+									<input type="checkbox" class="edit-input" disabled name="person[subscribed]" value="1" data-unchecked-value="0" ><i class="fa"></i>
+									<span class="show-checked">Subscribe</span><span class="show-unchecked">Not subscribed</span> <span class="hidden-xs">to newsletter emails</span>
+								</label>
+							</div>
+						</td>
+					</tr>
+								</table>
+		</div>
+	</div>
+
+	</form>
+
+	</div>
+			<div class="tab-pane" id="fees">
+			<div class="panel panel-default">
+	<h5 class="panel-heading totals-panel">
+		<div class="row">
+			<div class='col-sm-4' id='totalOutstanding'>Loading&hellip;</div><div class='col-sm-4' id='totalCredit'></div>			<div class="col-sm-4">
+				<a href="/get/statement?id=13" target="_blank">Statement<i class="fa fa-file-pdf-o" style="padding-left:5px"></i></a>
+							</div>
+		</div>
+	</h5>
+</div>
+
+<h4 style='margin:20px 0' id='bank-account'>Freeman bank account number: Bank-account</h4>
+<div class="panel panel-default dt-panel">
+	<h4 class="panel-heading">Fees</h4>
+	<table class="table table-mobile" id="feesTable">
+	    <thead>
+	        <tr>
+	            <th width="1%"></th>
+	            <th>Name</th>
+	            <th>Date</th>
+	            <th>Due Date</th>
+	            <th></th>
+				<th>Amount</th>
+				<th>Paid</th>
+				<th><span class="hidden-xs">Outstanding</span><span class="visible-xs-inline">To Pay</span></th>
+				<th width="1%"></th>
+	        </tr>
+	    </thead>
+		<thead class="width-control hidden-sm hidden-md hidden-lg"><tr><th width="70%"></th></tr></thead>
+	</table>
+</div>
+
+<table class="hidden" id="childRow">
+	<tr class="child-row">
+		<td colspan="10" class="payments-cell">
+			<div class="payments-holder" style="display:none">
+				<table class="payments-table">
+					<thead>
+						<tr>
+							<th width="10%">Payment Date</th>
+							<th width="15%">Method</th>
+							<th width="15%">Note/Reference</th>
+							<th width="15%">Amount</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+
+	<div class="panel panel-default dt-panel">
+		<h4 class="panel-heading">
+			Account Credits
+		</h4>
+		<table class="table" id="creditsTable">
+			<thead>
+				<tr>
+					<th class="hidden-xs">Name/Note</th>
+					<th>Date</th>
+					<th class="text-right">Amount</th>
+					<th class="hidden-xs text-right">Refunded</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+			</div>
+				<div class="tab-pane" id="events">
+			<div class="hidden-xs">
+	<div id="calendar" class="hidden"></div>
+<link rel="stylesheet" href="css/fullcalendar.print.min.css" media="print">
+<link rel="stylesheet" href="css/fullcalendar.min.css">
+<link rel="stylesheet" href="css/fm-calendar.css">
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/page/events/calendar.js"></script>
+</div>
+
+<div class="visible-xs-block">
+	<h4 class="ev-list-header">Upcoming Events</h4>
+	<ul class="list-unstyled ev-list-view">			<li>
+				<div class="ev-date ev-default">
+					31					<div class="ev-month">Mar</div>
+				</div>
+				<div class="ev-name">fff</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					3					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Top class</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am - 3:00am				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					4					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Hurricanes</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					6:00pm - 8:00pm				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					10					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Top class</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am - 3:00am				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					11					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Hurricanes</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					6:00pm - 8:00pm				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					17					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Top class</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am - 3:00am				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					18					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Hurricanes</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					6:00pm - 8:00pm				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					24					<div class="ev-month">Apr</div>
+				</div>
+				<div class="ev-name">Top class</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am - 3:00am				</div>
+							</li>
+						<li>
+				<div class="ev-date ev-attendance">
+					14					<div class="ev-month">Aug</div>
+				</div>
+				<div class="ev-name">Top class</div>
+				<div class="ev-time">
+					<i class="fa fa-clock-o"></i>&nbsp;
+					12:00am - 3:00am				</div>
+							</li>
+			</ul></div>
+		</div>
+				<div class="tab-pane" id="attendance">
+			<table class="table" id="profile-attendance">
+	<thead>
+		<tr>
+			<th>Event Attended</th>
+			<th>Date</th>
+			<th>Note</th>
+		</tr>
+	</thead>
+</table>
+		</div>
+				<div class="tab-pane" id="membership">
+				<div class="panel panel-default">
+		<h4 class="panel-heading">
+			Groups		</h4>
+					<table class="table" id="membership-table">
+									<thead>
+						<tr>
+							<th width="35%">Group</th>
+															<th width="20%">Term</th>
+								<th width="12.5%" class="hidden-xs">Term&nbsp;Start</th>
+								<th width="12.5%" class="hidden-xs">Term&nbsp;End</th>
+								<th width="20%">Position</th>
+														</tr>
+					</thead>
+					<tbody>
+														<tr class="">
+									<td>C: Top class</td>
+																			<td>- permanent -</td>
+										<td class="hidden-xs"></td>
+										<td class="hidden-xs"></td>
+										<td>2018-08-15</td>								</tr>
+																<tr class="">
+									<td>B: Hurricanes</td>
+																			<td>- permanent -</td>
+										<td class="hidden-xs"></td>
+										<td class="hidden-xs"></td>
+										<td>2018-03-12</td>								</tr>
+													</tbody>
+								</table>
+				</div>
+			</div>
+
+</div>
+	</div>
+</div>
+<script src="js/page/people/person.js?1031"></script>
+		<div class="profile-credit visible-xs-block">
+			<a href="https://friendlymanager.com" class="pull-right" target="_blank"><img src="/images/system/logo-white-tiny.png"></a>
+			Freeman		</div>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+	padding-top: 0;
+}
+
+.print-logo {
+	max-height: 90px;
+	float: right;
+	margin-bottom: 15px;
+}
+
+a[href]::after {
+	content: none !important;
+}
+
+.sidebar,
+.navbar-controls,
+th::after,
+.btn,
+.nav-tabs,
+.help-popover,
+.dataTables_wrapper>.row {
+	display: none !important;
+}
+
+.main-container {
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important;
+}
+
+.dt-panel>.panel-heading {
+	width: 100%;
+}
+
+table.dataTable thead>tr>th.sorting {
+	padding-right: 8px;
+}
+
+.form-control {
+	border-color: transparent;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	padding: 0;
+}
+
+.progress-bar {
+	border: 1px solid;
+}
+
+/*---- Profile ----*/
+
+.add-transaction {
+	border: none;
+	font-size: inherit;
+	font-weight: bold;
+	padding: 0;
+	display: inline !important
+}
+
+/*---- Attendance ----*/
+
+.attendance-awards>thead>tr:last-child>td {
+	width: 120px;
+}
