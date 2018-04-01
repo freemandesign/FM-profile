@@ -33,29 +33,38 @@ body {
 /* Head */
 .logo-container {
 	display: inline-block;
-	margin: 20px 0;
+  margin: -50px 0 20px 0;
 }
 .logo-container img {
-	height: 80px;
+	height: 120px;
+	border: solid 1px #dddddd;
+	border-radius: 10px;
 	max-width: 100%;
+	background-color: white;
 }
 .profile-club-dets {
 	text-align: right;
 }
 #profile-logout {
 	font-size: 12px;
-	position: relative;
+	float: right;
 	top: -4px;
-	margin-bottom: 12px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
+.club {
+	float: none;
+	margin: auto;
+	margin-top: -40px;
+}
+
 
 /* Top */
 .profile-top {
 	background: #006CAB;
 	padding: 9px 0;
 	color: #fff;
+	height: 50px;
 }
 .profile-greeting {
 	font-size: 18px;
@@ -74,6 +83,10 @@ body {
 }
 .profile-top .btn {
 	margin-left: 3px;
+}
+.nav {
+	 margin-left: 250px;
+	 float: left;
 }
 
 .action-buttons-top .btn {
@@ -150,7 +163,7 @@ body {
 		display: none;
 	}
 }
-@media (min-width:992px) {	
+@media (min-width:992px) {
 	body.show-sponsors .container-with-sponsors {
 		width: calc(100% - 190px);
 	}
@@ -161,7 +174,7 @@ body {
 		margin-bottom: 3px;
 	}
 }
-@media (min-width:992px) and (max-width:1199px) {	
+@media (min-width:992px) and (max-width:1199px) {
 	body.show-sponsors .child-col {
 		width: 50%;
 	}
